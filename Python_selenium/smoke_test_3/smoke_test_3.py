@@ -218,7 +218,7 @@ try:
     information_list_header = wait.until(
         EC.visibility_of_element_located((By.XPATH, "//span[@class='title']")))
     assert information_list_header.text == "Checkout: Your Information"
-    print("Першли на страницу 'Checkout: Your Information'")
+    print("Перешли на страницу 'Checkout: Your Information'")
 except Exception as e:
     # Выводим сохраненную информацию об ошибке в переменной e.
     print(f"Error: {str(e)}")
